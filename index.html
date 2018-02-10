@@ -10,7 +10,6 @@
 
     <title>OpenAir - Nutria Linux User Group</title>
     
-
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -21,29 +20,33 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
    
-
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
     <link rel="icon"  href="img/logos/fav_icon.png">
 
+    <!-- jQuery -->    
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>-->
+    
+    <!-- Bgswitcher -->    
+    <script src="js/jquery.bgswitcher.js"></script>
+
     <!-- Temporary navbar container fix -->
     <style>
-    .navbar-toggler {
-        z-index: 1;
-    }
-    
-    @media (max-width: 576px) {
-        nav > .container {
-            width: 100%;
+        .navbar-toggler {
+            z-index: 1;
         }
-    }
+        
+        @media (max-width: 576px) {
+            nav > .container {
+                width: 100%;
+            }
+        }
     </style>
 
 </head>
 
 <body id="page-top">
-
-
 
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse" id="mainNav">       
@@ -445,13 +448,7 @@
             </div>
         </div>
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <!--<script src="vendor/jquery/jquery.min.js"></script>-->
-<script
-			  src="https://code.jquery.com/jquery-3.2.1.js"
-			  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-			  crossorigin="anonymous"></script>
+    
     <script src="vendor/tether/tether.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
@@ -464,6 +461,16 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+
+    <script>
+        $(function () {
+            $(".masthead").bgswitcher({
+                images: ["file:///home/zoncrd/Documents/Nutria_LUG/Openair-website/img/header-bg.jpg", "file:///home/zoncrd/Documents/Nutria_LUG/Openair-website/img/header-bg1.jpg", "file:///home/zoncrd/Documents/Nutria_LUG/Openair-website/img/header-bg2.jpg", "file:///home/zoncrd/Documents/Nutria_LUG/Openair-website/img/header-bg3.jpg"],
+                loop: true,
+                shuffle: true
+            });
+        });
+    </script>
 
 </body>
 
